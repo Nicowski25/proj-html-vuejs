@@ -1,74 +1,73 @@
 <script>
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import NavbarSection from './Navbar.vue';
 export default {
- name: 'AppHeader',
- components: {
-    FontAwesomeIcon
- }
+    name: 'AppHeader',
+    components: {
+        FontAwesomeIcon,
+        NavbarSection
+    }
 }
 </script>
 
 <template>
-    <div class="border_bottom">
-        <nav class="container d-flex align-items-center justify-content-between">
-            <!-- left navbar -->
-            <div class="d-flex align-items-center">
-                <p class="m-0 px-2">English</p>
-                <select name="English" id="site_language"></select>
-            </div>
-            <!-- right navbar -->
-            <div class="d-flex">
-                <ul class="ls-none d-flex m-0">
-                    <li>Courses</li>
-                    <li>Zoom</li>
-                    <li>Pages</li>
-                    <li>Bundles</li>
-                    <li>Course Formats</li>
-                    <li>Add Course</li>
-                    <li>Demos</li>
-                </ul>
-                <ul class="icons d-flex ls-none m-0">
-                    <li><font-awesome-icon icon="fa-brands fa-twitter"/></li>
-                    <li><font-awesome-icon icon="fa-brands fa-instagram"/></li>
-                    <li><font-awesome-icon icon="fa-brands fa-behance"/></li>
-                    <li><font-awesome-icon icon="fa-brands fa-dribbble"/></li>
-                    <li><font-awesome-icon icon="fa-brands fa-github"/></li>
-                    <li><font-awesome-icon icon="fa-brands fa-linkedin"/></li>
-                    <li><font-awesome-icon icon="fa-brands fa-pinterest"/></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+    <NavbarSection />
 
+    <div class="container d-flex align-items-center justify-content-between py-2">
+        <img src="../assets/img/MasterStudy_logo.svg" alt="" class="header-logo">
+        <div class="category-icon d-flex align-items-center px-3">
+            <font-awesome-icon icon="fa-solid fa-bars" />
+            <p class="m-0 p-0">CATEGORY</p>
+        </div>
+        <div class="input-group">
+            <input type="text"  placeholder="Search courses" width="auto" class="input-search py-2 px-2">
+            <span class="input-group-text"><font-awesome-icon icon="fa-solid fa-magnifying-glass" /></span>
+        </div>
+        <div class="d-flex align-items-center">
+            <font-awesome-icon icon="fa-solid fa-bullhorn" />
+            <p>Become an Instructor</p>
+            <font-awesome-icon icon="fa-solid fa-briefcase" />
+            <p>For Enterprise</p>
+        </div>
+        <div class="d-flex align-items-center">
+            <button class="secondary-btn">
+                <font-awesome-icon icon="fa-regular fa-user"/>
+                <p>Log In</p>
+            </button>
+            <button class="main-btn">
+                <p>SIGN UP</p>
+            </button>
+        </div>
+    </div>
 </template>
 
-
 <style lang="scss" scoped>
-.border_bottom {
-    border-bottom: 1px solid #aaaaaa;
-}
+
 .container {
-    font-size: small;
-    color: #8b8b8b;
-}
-.ls-none {
-    list-style: none;
+    white-space: nowrap;
+    font-size: 0.9rem;
 }
 
-ul {
-    align-items: center;
-    li {
-        padding: 1rem;
-    }
+.header-logo {
+    padding-right: 1rem;
 }
 
-.icons {
-    li {
-        padding-left: 0.4rem;
-        padding-right: 0.4rem;
-    }
+p {
+    margin: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
+.input-group-text {
+    border-radius: 0;
+    color: white;
+    background-color: #005b96;
+    border: none;
+}
 
+.input-search {
+    background-color: #a3a3a3af;
+    border: none;
+}
 
 </style>
