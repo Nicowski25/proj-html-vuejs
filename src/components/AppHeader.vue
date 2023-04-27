@@ -50,7 +50,7 @@ export default {
 
 .container {
     white-space: nowrap;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .header-logo {

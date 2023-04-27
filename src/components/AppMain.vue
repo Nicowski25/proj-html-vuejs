@@ -3,6 +3,8 @@ import MainJumbo from './MainJumbo.vue';
 import MainPerks from './MainPerks.vue';
 import MainCourses from './MainCourses.vue';
 import MainOnlineLearning from './MainOnlineLearning.vue';
+import MainRecentCourses from './MainRecentCourses.vue';
+
 
 export default {
     name: 'AppMain',
@@ -10,7 +12,8 @@ export default {
         MainJumbo,
         MainPerks,
         MainCourses,
-        MainOnlineLearning
+        MainOnlineLearning,
+        MainRecentCourses,
     }
 }
 </script>
@@ -24,7 +27,8 @@ export default {
         <MainCourses/>
         <!-- section w100% limitless online learning -->
         <MainOnlineLearning/>
-
+        <!-- recent courses section -->
+        <MainRecentCourses/>
 </template>
 
 
