@@ -39,6 +39,11 @@ export default {
 
 
 <style lang="scss" scoped>
+@use '../assets/scss/partials/variables.scss' as *;
+
+#site_language {
+    border: none;
+}
 .border_bottom {
     border-bottom: 1px solid #aaaaaa;
 }
@@ -57,6 +62,9 @@ ul {
 
     li {
         padding: 1rem;
+    }
+    li:hover {
+        color: $primary;
     }
 }
 

@@ -34,7 +34,7 @@ export default {
         </div>
     </div>
 
-    <div class="container text-center py-4">
+    <div class="container text-center py-6">
         <button class="main-btn">SHOW ALL</button>
     </div>
 
@@ -42,8 +42,6 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/scss/partials/variables.scss' as *;
-
-
 .w-90 {
     width: 90%;
 }
@@ -56,5 +54,9 @@ export default {
         color: $blue;
         padding: 1rem;
     }
+}
+.py-6 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 </style>

@@ -29,9 +29,9 @@ export default {
         </div>
         <!-- buttons -->
         <div class="d-flex align-items-center">
-            <font-awesome-icon icon="fa-solid fa-bullhorn" />
+            <font-awesome-icon icon="fa-solid fa-bullhorn" class="color-blue"/>
             <p>Become an Instructor</p>
-            <font-awesome-icon icon="fa-solid fa-briefcase" />
+            <font-awesome-icon icon="fa-solid fa-briefcase" class="color-blue"/>
             <p>For Enterprise</p>
         </div>
         <div class="d-flex align-items-center">
@@ -47,7 +47,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
+@use '../assets/scss/partials/variables.scss' as *;
 .container {
     white-space: nowrap;
     font-size: 0.8rem;
@@ -61,6 +61,10 @@ export default {
     font-size: 0.7rem;
 }
 
+.color-blue {
+    color: $blue;
+}
+
 p {
     margin: 0;
     padding-left: 0.7rem;
@@ -70,12 +74,12 @@ p {
 .input-group-text {
     border-radius: 0;
     color: white;
-    background-color: #005b96;
+    background-color: $blue;
     border: none;
 }
 
 .input-search {
-    background-color: #c9c9c9;
+    background-color: $light-grey;
     border: none;
 }
 

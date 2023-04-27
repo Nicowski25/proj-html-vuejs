@@ -48,6 +48,10 @@ export default {
 }
 .statistic {
     padding: 2rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     .big-number {
         font-size: 3.5rem;
     }

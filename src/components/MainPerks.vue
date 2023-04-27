@@ -34,16 +34,16 @@ export default {
 
 
 <style lang="scss" scoped>
-
+@use '../assets/scss/partials/variables.scss' as *;
 .cards {
-    background-color: #b3b3b354;
+    background-color: $light-grey;
     padding: 1.5rem;
     h5 {
         padding-top: 0.8rem;
         padding-bottom: 0.8rem;
     }
     p {
-        color: #696969b2;
+        color: $dark-grey;
     }
 }
 
