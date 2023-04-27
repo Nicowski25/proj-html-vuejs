@@ -5,7 +5,7 @@ export default {
 </script>
 <template>
     <div class="background">
-        <div class="container text-center py-3">
+        <div class="container text-center py-5">
             <h2>We Are Proud</h2>
             <p class="py-3">Certificate courses are instructed by highly educated and qualified instructors who hold 
             <br> doctoral and master's level degrees. 

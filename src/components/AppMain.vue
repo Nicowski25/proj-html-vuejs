@@ -5,6 +5,7 @@ import MainCourses from './MainCourses.vue';
 import MainOnlineLearning from './MainOnlineLearning.vue';
 import MainRecentCourses from './MainRecentCourses.vue';
 import MainStatistics from './MainStatistics.vue';
+import MainNewsletter from './MainNewsletter.vue';
 
 export default {
     name: 'AppMain',
@@ -15,6 +16,7 @@ export default {
         MainOnlineLearning,
         MainRecentCourses,
         MainStatistics,
+        MainNewsletter,
     }
 }
 </script>
@@ -33,6 +35,7 @@ export default {
         <!-- sstatistics section -->
         <MainStatistics/>
         <!-- newsletter section -->
+        <MainNewsletter/>
 </template>
 
 
