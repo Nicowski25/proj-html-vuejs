@@ -20,7 +20,7 @@ export default {
         <!-- category selector -->
         <div class="category-icon d-flex align-items-center px-3">
             <font-awesome-icon icon="fa-solid fa-bars" />
-            <p class="m-0 p-0">CATEGORY</p>
+            <p class="m-0 p-0 px-2">CATEGORY</p>
         </div>
         <!-- searchbar -->
         <div class="input-group">
@@ -57,6 +57,10 @@ export default {
     padding-right: 1rem;
 }
 
+.category-icon {
+    font-size: 0.7rem;
+}
+
 p {
     margin: 0;
     padding-left: 0.7rem;
@@ -71,7 +75,7 @@ p {
 }
 
 .input-search {
-    background-color: #a3a3a3af;
+    background-color: #c9c9c9;
     border: none;
 }
 
