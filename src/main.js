@@ -20,8 +20,10 @@ import { faEarthAmericas } from '@fortawesome/free-solid-svg-icons';
 import { faDesktop } from '@fortawesome/free-solid-svg-icons';
 import { faCalendarCheck } from '@fortawesome/free-solid-svg-icons';
 import { faClock } from '@fortawesome/free-solid-svg-icons';
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 
-library.add(faTwitter, faBehance, faInstagram, faDribbble, faLinkedin, faGithub, faPinterest, faBars, faMagnifyingGlass, faBullhorn, faBriefcase, faUser, faEarthAmericas, faDesktop, faCalendarCheck, faClock),
+library.add(faTwitter, faBehance, faInstagram, faDribbble, faLinkedin, faGithub, faPinterest, faBars, faMagnifyingGlass, faBullhorn, faBriefcase, faUser, faEarthAmericas, faDesktop, faCalendarCheck, faClock, faChevronLeft, faChevronRight),
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')

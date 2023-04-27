@@ -9,7 +9,7 @@ export default {
             <img src="../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg">
             <div class="course-description">
                 <p class="course-category">Apache ></p>
-                <h5 class="course-name">Web Coding and Apache Basics</h5>
+                <h6 class="course-name">Web Coding and Apache Basics</h6>
                 <div class="price-time d-flex justify-content-between">
                     <p><font-awesome-icon icon="fa-solid fa-clock" /> 6 hours</p>
                     <p>Free</p>
