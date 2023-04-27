@@ -4,7 +4,7 @@ import MainPerks from './MainPerks.vue';
 import MainCourses from './MainCourses.vue';
 import MainOnlineLearning from './MainOnlineLearning.vue';
 import MainRecentCourses from './MainRecentCourses.vue';
-
+import MainStatistics from './MainStatistics.vue';
 
 export default {
     name: 'AppMain',
@@ -14,6 +14,7 @@ export default {
         MainCourses,
         MainOnlineLearning,
         MainRecentCourses,
+        MainStatistics,
     }
 }
 </script>
@@ -29,6 +30,9 @@ export default {
         <MainOnlineLearning/>
         <!-- recent courses section -->
         <MainRecentCourses/>
+        <!-- sstatistics section -->
+        <MainStatistics/>
+        <!-- newsletter section -->
 </template>
 
 
