@@ -27,3 +27,4 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 library.add(faTwitter, faBehance, faInstagram, faDribbble, faLinkedin, faGithub, faPinterest, faBars, faMagnifyingGlass, faBullhorn, faBriefcase, faUser, faEarthAmericas, faDesktop, faCalendarCheck, faClock, faChevronLeft, faChevronRight),
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
+
