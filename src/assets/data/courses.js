@@ -4,41 +4,47 @@ export const courses = [
         name: 'Web Coding and Apache Basics',
         category: 'Apache',
         duration: '6 hours',
-        cost: 'Free'
+        cost: 'Free',
+        hot: true,
     },
     {
         thumb: 'cat_2-272x161.jpg',
         name: 'Real Things Art Painting bu Jason Ni',
         category: 'Art',
         duration: '12 hours',
-        cost: '45$'
+        cost: '45$',
+        hot: false,
     },
     {
         thumb: 'course-preview-272x161.jpg',
         name: 'Basics of Masterstudy',
         category: 'Software Developement',
         duration: '6 hours',
-        cost: 'Free'
+        cost: 'Free',
+        hot: false,
     },
     {
         thumb: 'photo-1496307042754-b4aa456c4a2d-272x161.jpeg',
         name: 'How to be a DJ? Make Electonic Music',
         category: 'Electronic',
         duration: '6 hours',
-        cost: '$49'
+        cost: '$49',
+        special: true
     },
     {
         thumb: 'photo-1416339134316-0e91dc9ded92-scaled-272x161.jpeg',
         name: 'Design Instruments for Communications',
         category: 'Communication',
         duration: '9 hours',
-        cost: 'Free'
+        cost: 'Free',
+        new: true,
     },
     {
         thumb: 'cathryn-lavery-67852-unsplash-272x161.jpg',
         name: 'Make your Concept Right and Beautiful',
         category: 'Art',
         duration: '6 hours',
-        cost: '70$'
+        cost: '70$',
+        hot: false,
     },
 ]
