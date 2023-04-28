@@ -8,6 +8,7 @@ import MainStatistics from './MainStatistics.vue';
 import MainNewsletter from './MainNewsletter.vue';
 import MainPopoularCourses from './MainPopoularCourses.vue';
 import MainPlans from './MainPlans.vue';
+import MainFeedback from './MainFeedback.vue';
 
 export default {
     name: 'AppMain',
