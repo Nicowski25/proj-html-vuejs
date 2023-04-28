@@ -7,6 +7,7 @@ import MainRecentCourses from './MainRecentCourses.vue';
 import MainStatistics from './MainStatistics.vue';
 import MainNewsletter from './MainNewsletter.vue';
 import MainPopoularCourses from './MainPopoularCourses.vue';
+import MainPlans from './MainPlans.vue';
 
 export default {
     name: 'AppMain',
@@ -19,6 +20,8 @@ export default {
         MainStatistics,
         MainNewsletter,
         MainPopoularCourses,
+        MainPlans,
+        MainFeedback,
     }
 }
 </script>
@@ -40,6 +43,10 @@ export default {
         <MainNewsletter/>
         <!-- section of popoular courses -->
         <MainPopoularCourses/>
+        <!-- section plans of istructor or business -->
+        <MainPlans/>
+        <!-- section feedback -->
+        <MainFeedback/>
 </template>
 
 
