@@ -1,18 +1,21 @@
 <script>
 export default {
-    name: 'CourseComponent'
+    name: 'CourseComponent',
+    props: {
+        course: Object,
+    }
 }
 </script>
 <template>
     <div class="col">
         <div class="course">
-            <img src="../assets/img/photo-1461749280684-dccba630e2f6-544x322.jpeg">
+            <img :src="`src/assets/img/${course.thumb}`">
             <div class="course-description">
-                <p class="course-category">Apache ></p>
-                <h6 class="course-name">Web Coding and Apache Basics</h6>
+                <p class="course-category"> {{ course.category }} ></p>
+                <h6 class="course-name">{{ course.name }}</h6>
                 <div class="price-time d-flex justify-content-between">
-                    <p><font-awesome-icon icon="fa-solid fa-clock" /> 6 hours</p>
-                    <p>Free</p>
+                    <p><font-awesome-icon icon="fa-solid fa-clock" /> {{ course.duration }}</p>
+                    <p>{{ course.cost }}</p>
                 </div>
             </div>
         </div>
@@ -23,24 +26,32 @@ export default {
 <style lang="scss" scoped>
 @use '../assets/scss/partials/variables.scss' as *;
 
-.course {   
+.course {
     border: 1px solid $dark-grey;
     padding: 0;
+
     img {
         width: 100%;
     }
+
     .course-description {
         padding: 1rem;
+
         .course-category {
             color: $dark-grey;
+            font-size: 0.8rem;
         }
+
+        h6 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            height: 60px;
+        }
+
         .price-time {
             border-top: 1px solid $light-grey;
             padding-top: 0.7rem;
         }
     }
 }
-
-
-
 </style>

@@ -1,9 +1,18 @@
 <script>
+import { courses } from '../assets/data/courses';
 import CourseComponent from './CourseComponent.vue'
 export default {
     name: 'MainRecentCourses',
+    data() {
+        return {
+            courses
+        }
+    },
     components: {
         CourseComponent
+    },
+    props: {
+        course: Array,
     }
 }
 </script>
@@ -24,12 +33,7 @@ export default {
     <div class="container-fluid w-90">
         <div class="row row-cols-6 g-3 justify-content-between">
 
-            <CourseComponent />
-            <CourseComponent />
-            <CourseComponent />
-            <CourseComponent />
-            <CourseComponent />
-            <CourseComponent />
+            <CourseComponent v-for="course in courses" :course="course"></CourseComponent>
 
         </div>
     </div>
@@ -43,7 +47,7 @@ export default {
 <style lang="scss" scoped>
 @use '../assets/scss/partials/variables.scss' as *;
 .w-90 {
-    width: 90%;
+    width: 95%;
 }
 .list {
     list-style: none;
