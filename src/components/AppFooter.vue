@@ -1,6 +1,19 @@
 <script>
+import { blogs } from '../assets/data/blogArticles';
+import ArticleComponent from './ArticleComponent.vue';
 export default {
-    name: 'AppFooter'
+    name: 'AppFooter',
+    components: {
+        ArticleComponent
+    },
+    data() {
+        return {
+            blogs
+        }
+    },
+    props: {
+        article: Array
+    }
 }
 </script>
 
@@ -43,20 +56,7 @@ export default {
             <!-- blog -->
             <div class="col-2">
                 <strong>Blog</strong>
-                <div class="article pt-2">
-                    <img src="../assets/img/photo-1517520287167-4bbf64a00d66-50x50.jpeg" alt="">
-                    <div class="article-description">
-                        <p>Our main target is to 'Developing Yourself'</p>
-                        <p class="date">- Augusti 9, 2023</p>
-                    </div>
-                </div>
-                <div class="article">
-                    <img src="../assets/img/photo-1517520287167-4bbf64a00d66-50x50.jpeg" alt="">
-                    <div class="article-description">
-                        <p>Our main target is to 'Developing Yourself'</p>
-                        <p class="date p-0">- Augusti 9, 2023</p>
-                    </div>
-                </div>
+                <ArticleComponent v-for="article in blogs" :article="article"></ArticleComponent>
             </div>
         </div>
     </div>
@@ -84,14 +84,5 @@ p {
 ul {
     padding: 0;
 }
-.article {
-    display: flex;
-    img {
-        height: 60%;
-        padding-right: 0.5rem;
-    }
-    .date {
-        color: $dark-grey;
-    }
-}
+
 </style>
